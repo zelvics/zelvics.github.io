@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body,
+html {
+	font-family: "Lato", sans-serif;
+	overflow: hidden;
+	user-select: none;
+	cursor: url(cursor.png) 16 16, auto !important;
+	color: white;
+	text-align: center;
+}
+
+i {
+	cursor: url(cursor.png) 16 16, auto !important;
+}
+i:hover {
+	cursor: url(cursor.png) 16 16, auto !important;
+}
+
+.icons i i:hover a a:hover {
+	cursor: url(cursor.png) 16 16, auto !important;
+}
+
+Main {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+Main .header {
+	width: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+Main .header .icons {
+	margin-top: 10px;
+	color: white;
+	font-size: 25px;
+}
+
+.musicButtons i {
+	margin-top: 30px;
+	font-size: 30px;
+	cursor: pointer;
+	width: max-content;
+}
+
+Main .header a {
+	text-decoration: none;
+	color: white;
+	margin: 10px 5px;
+}
+
+Main .header > #name {
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: lowercase;
+	width: max-content;
+	margin: 0 auto;
+}
+
+Main .header > #name > p {
+	color: gray;
+	font-size: 16px;
+	display: inline-block;
+}
+
+Main .header .icons i {
+	transition: 200ms;
+	cursor: pointer;
+}
+
+Main .header .icons i:hover {
+	transform: scale(1.1);
+}
+
+.background {
+	background: radial-gradient(circle at bottom, rgb(41, 41, 41) 0, black 100%);
+	height: 100vh;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+.space {
+	background: rgba(49, 49, 49, 0.1) center / 200px 200px round;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.stars1 {
+	animation: space 180s ease-in-out infinite;
+	background-image: radial-gradient(1px 1px at 25px 5px, white, rgba(255, 255, 255, 0)), radial-gradient(1px 1px at 50px 25px, white, rgba(255, 255, 255, 0)),
+		radial-gradient(1px 1px at 125px 20px, white, rgba(255, 255, 255, 0)), radial-gradient(1.5px 1.5px at 50px 75px, white, rgba(255, 255, 255, 0)),
+		radial-gradient(2px 2px at 15px 125px, white, rgba(255, 255, 255, 0)), radial-gradient(2.5px 2.5px at 110px 80px, white, rgba(255, 255, 255, 0));
+}
+
+.stars2 {
+	animation: space 240s ease-in-out infinite;
+	background-image: radial-gradient(1px 1px at 75px 125px, white, rgba(255, 255, 255, 0)), radial-gradient(1px 1px at 100px 75px, white, rgba(255, 255, 255, 0)),
+		radial-gradient(1.5px 1.5px at 199px 100px, white, rgba(255, 255, 255, 0)), radial-gradient(2px 2px at 20px 50px, white, rgba(255, 255, 255, 0)),
+		radial-gradient(2.5px 2.5px at 100px 5px, white, rgba(255, 255, 255, 0)), radial-gradient(2.5px 2.5px at 5px 5px, white, rgba(255, 255, 255, 0));
+}
+
+.stars3 {
+	animation: space 300s ease-in-out infinite;
+	background-image: radial-gradient(1px 1px at 10px 10px, white, rgba(255, 255, 255, 0)), radial-gradient(1px 1px at 150px 150px, white, rgba(255, 255, 255, 0)),
+		radial-gradient(1.5px 1.5px at 60px 170px, white, rgba(255, 255, 255, 0)), radial-gradient(1.5px 1.5px at 175px 180px, white, rgba(255, 255, 255, 0)),
+		radial-gradient(2px 2px at 195px 95px, white, rgba(255, 255, 255, 0)), radial-gradient(2.5px 2.5px at 95px 145px, white, rgba(255, 255, 255, 0));
+}
+
+@keyframes space {
+	40% {
+		opacity: 0.75;
+	}
+	50% {
+		opacity: 0.25;
+	}
+	60% {
+		opacity: 0.75;
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.discordProfile {
+	margin: 10px 0;
+	height: 90px;
+	border-radius: 16px;
+	overflow: hidden;
+	width: max-content;
+	margin: 0 auto;
+	transition: 300ms ease-in-out;
+}
+
+.discordProfile:hover {
+	height: 210px;
+}
+
+main .header .emojis {
+	margin-top: 10px;
+}
